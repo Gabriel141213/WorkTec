@@ -10,9 +10,13 @@ class ListProjects extends ChangeNotifier{
   UnmodifiableListView<ObjectTcc> get lista => UnmodifiableListView(_object!);
 
   void add(String nomeAluno, String nomeOrientador, String registroAluno, String registroOrientador, String tituloTrab, String palavraChave) { 
-      _object!.add(ObjectTcc(nomeAluno: nomeAluno, nomeOrientador: nomeOrientador, 
-                            registroAluno: registroAluno, registroOrientador: registroOrientador, tituloTrab: tituloTrab, palavraChave: palavraChave));
+      if(nomeAluno != '' && nomeOrientador != '' && registroAluno != '' && registroOrientador != '' && tituloTrab != '' && palavraChave != ''){
+        _object!.add(ObjectTcc(nomeAluno: nomeAluno, nomeOrientador: nomeOrientador, 
+                              registroAluno: registroAluno, registroOrientador: registroOrientador, tituloTrab: tituloTrab, palavraChave: palavraChave));
      notifyListeners();
+      }else{
+        print("Não existem dados para a adição");
+      }
   }
     
   void remove (int index) {

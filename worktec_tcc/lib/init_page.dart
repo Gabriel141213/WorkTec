@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:worktec_tcc/home_page.dart';
 import 'package:worktec_tcc/lista_projetos.dart';
 import 'label_texto.dart';
 
@@ -146,6 +147,11 @@ class _CadastroState extends State<Cadastro> {
                   onPressed: () {
                     objeto.add(nomeAluno.text, nomeOrientador.text, registroAluno.text, 
                                registroOrientador.text, tituloTrab.text, palavraChave.text);
+                    Navigator.push(context, 
+                      MaterialPageRoute(
+                        builder: ((context) =>  HomePage())
+                      )
+                    );
                     //print(ListProjects().lista);
                   },
                   icon: const Icon(Icons.send),

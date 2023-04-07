@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextButtomClass extends StatefulWidget {
-  TextButtomClass(this.label, this.altura, this.largura, this.controller);
+  TextButtomClass(this.label, this.altura, this.largura, this.controller, {super.key});
   String label = '';
   double largura = 0;
   double altura = 0;
