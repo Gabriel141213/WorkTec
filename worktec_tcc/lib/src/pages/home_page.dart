@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:worktec_tcc/init_page.dart';
-import 'package:worktec_tcc/lista_projetos.dart';
-import 'package:worktec_tcc/project_model.dart';
+import 'package:worktec_tcc/src/pages/init_page.dart';
+import 'package:worktec_tcc/src/config/models/lista_projetos.dart';
+import 'package:worktec_tcc/src/config/models/project_model.dart';
 
-import 'confirm_remove.dart';
+import '../confirm_remove.dart';
 
 class HomePage extends StatefulWidget {
 

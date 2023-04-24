@@ -1,7 +1,7 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:worktec_tcc/project_model.dart';
+import 'package:worktec_tcc/src/config/models/project_model.dart';
 
 class ListProjects extends ChangeNotifier{
 
