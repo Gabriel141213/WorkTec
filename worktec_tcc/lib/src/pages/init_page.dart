@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:worktec_tcc/home_page.dart';
-import 'package:worktec_tcc/lista_projetos.dart';
-import 'label_texto.dart';
+import 'package:worktec_tcc/src/pages/home_page.dart';
+import 'package:worktec_tcc/src/config/models/lista_projetos.dart';
+import '../label_texto.dart';
 
 class Cadastro extends StatefulWidget {
   Cadastro({super.key});
