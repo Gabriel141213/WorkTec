@@ -137,7 +137,7 @@ class _CadastroState extends State<Cadastro> {
                   onPressed: (() {
                     
                   }),
-                  child: Text('Carregar trabalho'),
+                  child: const Text('Carregar trabalho'),
                 ),
                 SizedBox(
                   height: size.height * 0.03,
